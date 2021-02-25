@@ -311,7 +311,7 @@ color: white;
 .carousel-indicators {
 	position: absolute;
 	right: 0;
-	bottom: -60px!important;
+	bottom: -10px!important;
 }
 
 .carousel-indicators li {
@@ -342,4 +342,71 @@ color: white;
 	margin-bottom: 20px;
 }
 
+.box a:after{
+	content: "\f10d";
+	font-family: 'Font Awesome\ 5 Free';
+	width: 40px;
+	height: 40px;
+	font-weight: 900;
+	border-radius: 50%;
+	background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+	color: white;
+	position: absolute;
+	top: 120%;
+	left: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 /***********hAPPY cLIENTS css Ends**************/
+
+
+/***********contact us css Starts**************/
+
+
+.contactus {
+	width: 100%;
+	height: 100vh;
+	padding: 80px 0;
+	position: relative;
+}
+
+.contactus:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+	z-index: -1;
+}
+
+.form-btn button {
+	border: 1px solid #50d1c0;
+	border-radius: 100px;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline: none;
+	color: #50d1c0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4;
+	text-align: center;
+	background: transparent;
+
+}
+
+
+form:hover .form-btn button{
+	background: #fff;
+	color: #50d1c0;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0);
+}
+
+::placeholder{
+	font-size: 0.85rem;
+
+}
+/***********contact us css Ends**************/

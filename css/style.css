@@ -410,3 +410,28 @@ form:hover .form-btn button{
 
 }
 /***********contact us css Ends**************/
+
+
+/***********Newsletter css starts**************/
+
+
+	.newsletter {
+		width: 100%;
+		height: auto;
+		margin: 80px auto;
+	}
+
+	.news-input {
+		border-radius: 100px 0px 0px  100px!important;
+		min-width: 150px;
+		min-height: 45px;
+	}
+
+	.input-group-text{
+		color: #fff!important;
+		background: #5bc0de!important;
+		border-radius: 0px  100px 100px 0px!important;
+		min-width: 120px;
+		min-height: 45px;
+	}
+/***********Newsletter css Ends**************/

@@ -22,7 +22,7 @@
   </head>
   <body>
    <div class="header" id="topheader">
-   	<nav class="navbar navbar-expand-lg fixed-top" >   
+   	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" >   
    	<div class="container text-uppercase p-2">
 
 
@@ -37,16 +37,16 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
+        <a class="nav-link" href="#servicediv">Services</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">Price</a>
+        <a class="nav-link" href="#pricingdiv">Price</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="#newsletterid">About Us</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">Contact </a>
+        <a class="nav-link" href="#contactid">Contact </a>
       </li>
       
      
@@ -61,8 +61,8 @@
 		<h1 class="font-weight-bold">We are the Providers.</h1>
 		<p>We provide u the Unlimited Khusi</p>
 		<div class="header-buttons"> 
-			<a href="#">About Us</a>
-			<a href="#"> Contact</a>
+			<a href="#newsletterid">About Us</a>
+			<a href="#contactid"> Contact</a>
 		</div>
 	</div>
 </section>
@@ -459,7 +459,7 @@
     </div>  
       <div class="container">
         <div class="row">
-        <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 col-2">
+        <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
             <form action="/action_page.php">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Username" id="username" required autocomplete="off">
@@ -528,6 +528,7 @@
     <footer class="footersection" id="footerid">
       <div class="container">
         <div class="row">
+
             <div class="col-lg-4 col-md-6 col-12 footer-div">
               <div>
                 <h3>ABOUT US</h3>
@@ -536,7 +537,7 @@
               
             </div>
 
-            <div class="col-lg-4 col-md-6 col-12 footer-div">
+            <div class="col-lg-4 col-md-6 col-12 footer-div text-center">
               <div>
                 <h3>NAVIGATION LINKS</h3>
                 <li><a href="#">Home</a></li>
@@ -554,13 +555,13 @@
                 <p>For Bsiness professional caughtn between high OEM price mediocare print and graphics output</p>
               <div class="container newsletter-main">
                 <div class="row">
-                  <div class="col-lg-8 offset-lg-2 col-12">
-                      <div class="input-group mb-3">
-                          <input type="text" class="form-control news-input" placeholder="Email" id="demo" name="email">
-                          <div class="input-group-append">
-                            <span class="input-group-text">Subscribe</span>
-                          </div>
-                        </div>
+                  <div class="col-lg-12  col-12">
+                       <div class="input-group mb-3">
+                    <input type="text" class="form-control news-input" placeholder="Email" id="demo" name="email">
+                    <div class="input-group-append">
+                      <span class="input-group-text">Subscribe</span>
+                    </div>
+                  </div>
 
                     
                   </div>
@@ -575,11 +576,14 @@
         </div>
         <div class=" mt-5 text-center">
           <p>The © symbol, or the word 'Copyright' or abbreviation 'Copr.'</p>
-          
-        </div>
+          </div>
+
+          <div class="scrolltop float-right">
+            <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+            
+          </div>
         
       </div>
-      
     </footer>
     
 
@@ -603,6 +607,28 @@
       delay:10,
       time:3000
     })
+
+    //Get the button
+    mybutton = document.getElementById("myBtn");
+     //when user scrolls down 20pxfrom top then show the button
+
+     window.onscroll = function(){ scrollFunction()};
+
+     function scrollFunction(){
+      if(document.body.scrollTop >20 || document.documentElement.scrollTop >20) {
+        mybutton.style.display = "block";
+      }
+      else {
+        mybutton.style.display = "none";
+      }
+     }
+
+     //when user clicks on btn, scroll to top
+
+     function topFunction() {
+      document.body.scrollTop = 0; //for safari
+      document.documentElement.scrollTop = 0; //for chrome,firefox,IE and opera    
+      }
 
   </script>
 </body>

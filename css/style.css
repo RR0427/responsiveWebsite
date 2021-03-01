@@ -1,3 +1,8 @@
+
+html{
+	scroll-behavior: smooth;
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 
 a{text-decoration: none;}
@@ -423,7 +428,7 @@ form:hover .form-btn button{
 
 	.news-input {
 		border-radius: 100px 0px 0px  100px!important;
-		min-width: 150px;
+		min-width: 100px;
 		min-height: 45px;
 	}
 
@@ -431,7 +436,83 @@ form:hover .form-btn button{
 		color: #fff!important;
 		background: #5bc0de!important;
 		border-radius: 0px  100px 100px 0px!important;
-		min-width: 120px;
+		min-width: 90px;
 		min-height: 45px;
 	}
 /***********Newsletter css Ends**************/
+
+
+/***********Footer css starts**************/
+
+.footersection {
+	width: 100%;
+	height: auto;
+	padding: 70px0 20px 0;
+	background: #00abff;
+	position: relative;
+}
+
+.footersection p {
+	color: #fff;
+}
+
+.footersection li a {
+	font-size: 0.9rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.footersection h3{
+	text-transform: uppercase;
+	color: #fff;
+	margin: 35px 25px 0 0;
+	font-size: 1.2rem!important;
+	font-weight: 600;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+
+
+#myBtn{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	z-index: 99;
+	border: none;
+	color: #fff;
+	background: #00abff;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#myBtn:hover{
+	background: #606060;
+}
+/***********Footer css Ends**************/
+
+
+
+/***********media queries css Ends**************/
+
+
+@media(max-width: 768px){
+	.nav-item{
+		text-align: center!important;
+	}
+	.pricing, .happyclients, .contactus{
+		height: auto;
+		margin-top: 50px;
+	}
+
+	.card-second{
+		transform: translateY(0px);
+		margin: 30px 0;
+	}
+
+	.footer-div:nth-child(2){
+		text-align: left!important;
+	}
+}
